@@ -1,0 +1,5 @@
+model:
+  degree: 3 # Not using now
+  weights_init: "zero" # Not implemented now
+  lr: 0.001 
+  epochs: 1000
