@@ -1,3 +1,9 @@
+dataset:
+  name: "wine_quality"
+  train_size: 0.8
+  val_size: 0.3
+  scalling: "normalization"
+
 model:
   degree: 3 # Not using now
   weights_init: "zero" # Not implemented now
