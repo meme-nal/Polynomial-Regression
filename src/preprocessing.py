@@ -28,3 +28,11 @@ def normalize(dataset:numpy.ndarray)->numpy.ndarray:
 def standardize(dataset:numpy.ndarray, mean:float, std:float)->numpy.ndarray:
     # move our data to standard normal distribution
     pass
+
+def scalling(dataset:numpy.ndarray, type:str, mean=None, std=None):
+    if type == "normalization":
+        return normalize(dataset)
+    elif type == "standardization":
+        return standardize(dataset, mean, std)
+    else:
+        raise(TypeError)
